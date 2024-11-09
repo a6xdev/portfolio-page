@@ -1,0 +1,149 @@
+:root {
+    --main-color: #8822f6;
+
+    --main-bg-color: #000;
+
+    --main-t-color: #fff
+}
+
+
+/* ------RESET------ */
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+/* ------RESET------ */
+
+
+/* ------RANDOM------ */
+body {
+    background-color: var(--main-bg-color);
+}
+
+.DevImgAbout {
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+}
+
+.ImgTest {
+    height: 350px;
+    width: 600px;
+    background: red;
+}
+
+/* ------RANDOM------ */
+
+/* ------HEADER------ */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+    background: var(--main-bg-color);
+}
+
+.DevUser {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: var(--main-t-color);
+}
+
+.SocialMedias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.SocialMedias a {
+    font-size: 25px;
+    color: white;
+    transition: all 0.5s;
+}
+
+.SocialMedias a:hover {
+    color: var(--main-color);
+}
+/* ------HEADER------ */
+
+/* ------ABOUT------ */
+.DevAbout {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    padding: 50px;
+    color: var(--main-t-color);
+    gap: 50px;
+}
+
+.Dev {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.DevTextbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+.DevTextbox p {
+    font-size: 20px;
+}
+/* ------ABOUT------ */
+
+/* ------PROJECTS------ */
+.ProjectsList {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+    color: var(--main-t-color);
+}
+
+.ProjectGrid {
+    column-count: 3;
+    column-gap: 5px;
+}
+
+.Project {
+    display: inline-block;
+    width: 100%;
+}
+
+.Project img {
+    display:block;
+    width: 100%;
+}
